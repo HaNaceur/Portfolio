@@ -1,0 +1,129 @@
+
+
+.container{
+    color: black;
+    padding: 1rem;
+
+}
+
+/*Left section*/
+
+.left-section{
+    background-color: var(--lightsteelblue);
+    padding: 2rem ;
+    border-radius: 1%;
+    
+}
+
+.profil{
+    background-color: rgba( rgb(47, 110, 141), 1);
+    text-align: center;
+    padding-bottom: 0.5rem;
+
+}
+.header__image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid lightgoldenrodyellow;
+
+}
+.header__title{
+    font-size: 3rem;
+
+}
+.header__subtitle{
+    color:lightgoldenrodyellow;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+.main{
+    padding: 3rem;
+    
+}
+.main__title{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-weight: 200;
+    margin: 0.4em 0;
+
+}
+.main__subtitle{
+    color:lightgoldenrodyellow;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 0 1rem 0;
+    font-weight: 200;
+    margin: 0.4em 0;
+
+}
+p{
+    text-align: justify;
+    line-height: 2rem;
+}
+
+/*Right section*/
+
+.languages-section{
+    display: flex;
+    flex-direction: row; 
+    margin: 1rem 40rem 1rem 1rem;
+    padding: 1rem;
+    border-radius: 1%;
+    box-sizing: border-box;
+    background-color: lightgoldenrodyellow;
+}
+
+.stack_section, .skills_section, .hobbies_section{
+    display: flex;
+    flex-direction: row; 
+    justify-content:center;
+    margin: 1rem 40rem 1rem 1rem;
+    padding: 1rem;
+    border-radius: 1%;
+    box-sizing: border-box;
+    background-color: rgba(207, 208, 146, 0.5);
+}
+
+.section{
+    padding: 3rem;
+    margin: 2rem;
+}
+.section__subtitle{
+    color: var(--lightsteelblue);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 0 1rem 0;
+    font-style: italic;
+    font-weight: bold;
+  
+
+}
+.section__language{
+    line-height: 2rem;
+}
+
+.flags{
+max-width: 10%;
+}
+
+.tech-images{
+    max-width: 10%;
+}
+
+
+#Progress_Status {
+    width: 100%;
+    background-color: #ddd;
+  }
+    
+  #myprogressBar {
+   /* width: 60%;*/
+    height: 35px;
+    text-align: center;
+    line-height: 32px;
+    color: black;
+  }
+

@@ -1,0 +1,19 @@
+{
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2022
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": ["error", 2],
+      "quotes": ["error", "double"],
+      "semi": ["error", "always"],
+      "no-multi-spaces": "error",
+      "no-trailing-spaces": "error",
+      "eol-last": "error"
+    }
+  }
+  

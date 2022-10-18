@@ -1,0 +1,12 @@
+
+.main{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.error{
+    color:lightgoldenrodyellow;
+    font-size: 5rem;
+
+}

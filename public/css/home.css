@@ -1,0 +1,57 @@
+
+.body{ 
+   background-color:#e3e0cf;
+    font-family: 'Roboto Slab';
+}
+
+.header{
+    background-color: #c5d5cb;
+}
+
+.header__navbar{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding :1.5rem;
+}
+.header__link{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar__home, .navbar__parcours, .navbar__projets,.navbar__contacter,.navbar__games{
+    background-color: #e3e0cf ;
+    color: #9fa8a3;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    padding: 2rem ;
+    border: 2px solid transparent ;
+    border-radius: 5%;
+    transition: border 0.5s ease-in-out;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+.navbar__home:hover,.navbar__parcours:hover,.navbar__projets:hover, .navbar__contacter:hover,.navbar__games:hover{
+    border: 2px solid lightgrey;
+    background-color: white;
+}
+
+.main{
+    text-align: center;
+    padding-top: 10rem;
+}
+.main__title{
+    color:#9fa8a3 ;
+    font-size: 5rem;
+}
+.footer{
+    padding-top: 25rem;
+}
+.footer__mail{
+    display: block;
+    text-align: center;
+    font-size: small;
+    border-top: 0.2px solid lightgoldenrodyellow;
+    color: lightgoldenrodyellow;
+    padding-top: 1rem;
+}
