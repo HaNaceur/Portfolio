@@ -28,14 +28,8 @@ app.get ('/contact',(req,res,next)=>{
     next();
 });
 
-app.get ('/games',(req,res,next)=>{
-    res.render('games');
-    next();
-});
-
-
 app.use((req,res)=>{
-    res.status(404).render('404');
+    res.status(404).render('404')
 })
 
 app.listen(port);

@@ -1,11 +1,17 @@
+:root{
+  --main-color:#e3e0cf;
+    --second-color:#c5d5cb;
+    --third-color:#9fa8a3;
+}
+
 
 .body{ 
-   background-color:#e3e0cf;
+   background-color:var(--main-color);
     font-family: 'Roboto Slab';
 }
 
 .header{
-    background-color: #c5d5cb;
+    background-color: var(--second-color);
 }
 
 .header__navbar{
@@ -21,8 +27,8 @@
 }
 
 .navbar__home, .navbar__parcours, .navbar__projets,.navbar__contacter,.navbar__games{
-    background-color: #e3e0cf ;
-    color: #9fa8a3;
+    background-color: var(--main-color) ;
+    color: var(--third-color);
     box-sizing: border-box;
     margin-right: 1rem;
     padding: 2rem ;
@@ -41,7 +47,7 @@
     padding-top: 10rem;
 }
 .main__title{
-    color:#9fa8a3 ;
+    color:var(--third-color);
     font-size: 5rem;
 }
 .footer{
@@ -51,7 +57,7 @@
     display: block;
     text-align: center;
     font-size: small;
-    border-top: 0.2px solid lightgoldenrodyellow;
-    color: lightgoldenrodyellow;
+    border-top: 0.2px solid var(--second-color);
+    color: var(--third-color);
     padding-top: 1rem;
 }

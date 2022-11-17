@@ -1,8 +1,6 @@
 
     <%- include('./partials/head.ejs') %>
-    
     <link rel="stylesheet" href="./css/aboutme.css">
-   
 
     <%- include('./partials/nav.ejs') %>
 
@@ -21,7 +19,7 @@
 
         <main class="main">
 
-            <h1>About me</h1>
+            <h1 class="main__title">About me</h1>
             <p>Being developer was for me a dream coming true, when I was kid I always wanter to become that
                 guy making applications and videogames. The reality quickly catch me up, I finally worked as Financial 
                 in big international companies in France and aboard it was great experiences but my life still had a bitter taste. 
@@ -31,7 +29,7 @@
                <p> I took over the rains of my destiny to fulfill my child dream and becoming a Web Developper.
                 My past experiences alowed me to get a strong team spirit, great communication skills and capacity of adaptation to my environment and tools.
 
-                Strong from my past professionals experiences and the new developing expertises I aquired, I will enjoyed to work among you !
+                Strong from my past professionals experiences and the developing expertises I aquired, I will enjoyed to work among you !
             </p>
 
 
@@ -55,57 +53,76 @@
 
     </section>
     <div>
+        <h3 class="section__subtitle">Languages</h3> 
         <section class="languages-section">
-            <h3 class="section__subtitle">Languages</h3>
+            
             <ul class="section__language">
                 
+                <div class="container__languages">
                 <li><img class="flags" src="/image/royaume-uni.png" alt="England Flag"></li>
-                <div id="Progress_Status">
-                    <div id="myprogressBarAn"></div>
+    
+                <div class="progressBar progress-moved">
+                    <div class="progress-barAn"></div>
                   </div>
+                </div>
+                 
 
                 <li> <img class="flags" src="/image/la-france.png" alt="Frensh Flag"></li>
-                <div id="Progress_Status">
-                    <div id="myprogressBarFr"></div>
+                <div class="progressBar progress-moved">
+                    <div class="progress-barFr"></div>
                   </div>
-
                 <li><img class="flags" src="/image/spain.png" alt="Spain Flag"></li>
-                <div id="Progress_Status">
-                    <div id="myprogressBarEs"></div>
+                <div class="progressBar progress-moved">
+                    <div class="progress-barEs"></div>
                   </div>
 
                 <li><img class="flags" src="/image/arabie-saoudite.png" alt="Saudi Flag"></li>
-                <div id="Progress_Status">
-                    <div id="myprogressBarAr"></div>
+                <div class="progressBar progress-moved">
+                    <div class="progress-barAr"></div>
                   </div>
 
-
             </ul>
         </section>
 
-        <section class="skills_section">
-            
-            <h3 class="section__subtitle">Skills</h3>
-            <ul class="section__skills">
-                <li>Office Pack</li>
-                <li>ORACLE</li>
-            </ul>
-        </section>
-        <section class="stack_section">
-            <h3 class="section__subtitle">Tech Stack</h3>
-            <ul class="section__skills">
-                <li> <img class="tech-images" src="/image/js.png" alt="JavaScript Logo"> </li>
-                <li><img class="tech-images" src="/image/nodejs.png" alt="Node.JS Logo"></li>
-                <li><img class="tech-images" src="/image/physics.png" alt="React Logo"></li>
-                <li><img class="tech-images" src="/image/html-5.png" alt="HTML Logo"></li>
-                <li><img class="tech-images" src="/image/css-3.png" alt="CSS Logo"></li>
-                <li><img class="tech-images" src="/image/sql-server.png" alt="SQL Logo"></li>
-                <li><img class="tech-images" src="/image/postgre.png" alt="Postgres Logo"></li>
-                <li><img class="tech-images" src="/image/linux.png" alt="Postgres Logo"></li>
-            </ul>
-        </section>
+        <h3 class="section__subtitle">Tech Stack</h3>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="/image/js.png" height="100" width="100" alt="JavaScript Logo" />
+                </div>
+                <div class="slide">
+                    <img src="/image/nodejs.png" height="100" width="100" alt="NodeJS Logo" />
+                </div>
+                <div class="slide">
+                    <img src="/image/physics.png" height="100" width="100" alt="React Logo" />
+                </div>
+                <div class="slide">
+                    <img src="/image/html-5.png" height="100" width="100" alt="HTML Logo" />
+                </div>
+                <div class="slide">
+                    <img src="/image/css-3.png" height="100" width="100" alt="CSS Logo" />
+                </div>
+                <div class="slide">
+                    <img src="/image/sql-server.png" height="100" width="100" alt="SQL Logo" />
+                </div>
+                <div class="slide">
+                    <img src="/image/postgre.png" height="100" width="100" alt="PostgreSQL Logo" />
+                </div>
+                <div class="slide">
+                    <img src="/image/linux.png" height="100" width="100" alt="Linux Logo" />
+                </div>
+                <div class="slide">
+                    <img src="/image/github.png" height="100" width="100" alt="Github Logo" />
+                </div>
+                <div class="slide">
+                    <img src="/image/oracle.png" height="100" width="100" alt="Oracle Logo" />
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section__subtitle">Hobbies</h3>
         <section class="hobbies_section">
-            <h3 class="section__subtitle">Hobbies</h3>
+           
             <ul class="section__hobbies">
                 <li><div style="width:70%;height:0;padding-bottom:60%;position:relative;"><iframe src="https://giphy.com/embed/Vdu4ZSqcCw0AoQ8v7F" width="50%" height="50%" style="position:absolute" frameBorder="0" class="giphy-embed" ></iframe></div><a href="https://giphy.com/gifs/HyperflyWorldWide-mma-jiujitsu-jiu-jitsu-Vdu4ZSqcCw0AoQ8v7F"></a> Brazilian Juijitsu </li>
                 <li><div style="width:50%;height:0;padding-bottom:125%;position:relative;border: radius 10%;;"><iframe src="https://giphy.com/embed/AErExHJVxRbkm5hPkB" width="50%" height="50%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><a href="https://giphy.com/gifs/travel-traveling-internships-AErExHJVxRbkm5hPkB">via GIPHY</a>Travels and cultures</li>
