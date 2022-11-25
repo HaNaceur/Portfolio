@@ -1,3 +1,9 @@
+:root{
+  --main-color:#e3e0cf;
+    --second-color:#c5d5cb;
+    --third-color:#9fa8a3;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -5,7 +11,7 @@
   }
   
   body {
-    background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
+    background: linear-gradient(to right, var(--main-color) 0%, var(--second-color) 100%);
     font-size: 12px;
   }
   
@@ -109,7 +115,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    color: #ea1d6f;
+    color: var(--second-color);
     font-size: 26px;
   }
   
@@ -121,7 +127,7 @@
     bottom: -10px;
     width: 25px;
     height: 4px;
-    background: #ea1d6f;
+    background: var(--second-color);
   }
   
   .app-contact {
@@ -167,40 +173,16 @@
   .app-form-button {
     background: none;
     border: none;
-    color: #ea1d6f;
+    color: var(--second-color);
     font-size: 14px;
     cursor: pointer;
     outline: none;
   }
   
   .app-form-button:hover {
-    color: #b9134f;
+    color: var(--second-color);
   }
   
-  .credits {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    color: #ffa4bd;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  
-  .credits-link {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .dribbble {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-  }
   
   @media screen and (max-width: 520px) {
     .screen-body {
