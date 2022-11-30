@@ -202,7 +202,7 @@ max-width: 10%;
 .slider {
 	height: 100px;
 	margin: auto;
-	overflow:hidden;
+  overflow: hidden;
 	position: relative;
 	width: auto;
    

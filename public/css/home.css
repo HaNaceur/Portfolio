@@ -37,8 +37,11 @@
 }
 .navbar__home:hover,.navbar__parcours:hover,.navbar__projets:hover, .navbar__contacter:hover,.navbar__games:hover{
     font-style: underline;
-    border: 1px solid lightgrey;
-    background-color: white;
+    text-decoration: none;
+    border-top:2px solid white ;
+     border-bottom:2px solid white;
+   /* border: 1px solid lightgrey;
+    background-color: white;*/
 }
 
 .main{
