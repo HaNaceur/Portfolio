@@ -31,6 +31,17 @@
     margin: auto;
     padding: 10px;
   }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color:lightgoldenrodyellow;
+    font-size: 2rem;
+    text-align: justify;
+    padding-bottom: 5rem;
+}
+    
   
   .screen {
    position:relative;
