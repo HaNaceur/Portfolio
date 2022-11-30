@@ -1,5 +1,5 @@
 :root{
-  --main-color:#e3e0cf;
+  --main-color:white;
     --second-color:#c5d5cb;
     --third-color:#9fa8a3;
 }
@@ -11,7 +11,7 @@
   }
   
   body {
-    background: linear-gradient(to right, var(--main-color) 0%, var(--second-color) 100%);
+    background: var(--main-color);
     font-size: 12px;
   }
   
@@ -33,7 +33,7 @@
   }
   
   .screen {
-    position: relative;
+   position:relative;
     background: #3e3e3e;
     border-radius: 15px;
   }

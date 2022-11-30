@@ -1,11 +1,11 @@
 :root{
-    --main-color:#e3e0cf;
+    --main-color:white;
       --second-color:#c5d5cb;
       --third-color:#9fa8a3;
   }
 
   body {
-    background: linear-gradient(to right, var(--main-color) 0%, var(--second-color) 100%);
+    background: var(--main-color);
 	align-items: center;
 	justify-content: center;
 }
@@ -78,27 +78,18 @@ p{
     line-height: 2rem;
 }
 
+.main_cv{
+  width: 20%;
+}
 /*Right section*/
 
-.languages-section{
+.languages-section, .stack_section, .hobbies_section{
     display: flex;
     flex-direction: row; 
     margin: 1rem 1rem 1rem 1rem;
     padding: 1rem;
-    border-radius: 1%;
     box-sizing: border-box;
     background-color: var(--second-color);
-}
-
-.stack_section, .skills_section, .hobbies_section{
-    display: flex;
-    flex-direction: column; 
-    justify-content:center;
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 1rem;
-    border-radius: 1%;
-    box-sizing: border-box;
-    background-color:var(--second-color);
 }
 
 .section{

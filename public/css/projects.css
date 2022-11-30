@@ -1,14 +1,24 @@
-body{
-    background: linear-gradient(to right, var(--main-color) 0%, var(--second-color) 100%);
-}
+:root{
+    --main-color:white;
+      --second-color:#c5d5cb;
+      --third-color:#9fa8a3;
+  }
 
 
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main__title{
-color: lightgoldenrodyellow;
+color:var(--third-color) ;
 }
+
+.container{
+    display: flex;
+    flex-direction:row;
+    box-sizing: border-box;
+}
+
