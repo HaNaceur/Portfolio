@@ -78,6 +78,7 @@ p{
     line-height: 2rem;
 }
 
+
 .main_cv{
   width: 20%;
 }
@@ -211,8 +212,8 @@ max-width: 10%;
 
 .slider	.slide-track {
 		animation: scroll 40s linear infinite ;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 		display: flex;
 		width: calc(250px * 14);
 	}

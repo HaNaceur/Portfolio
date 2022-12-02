@@ -1,35 +1,31 @@
-const express=require('express');
+const express=require("express");
 const app=express();
 const port=3000;
 
-app.set('view engine', 'ejs')
-app.set('views', './views');
+app.set("view engine", "ejs");
+app.set("views", "./views");
 
 
-app.use(express.static('public'));
+app.use(express.static("public"));
 
-app.get ('/',(req,res,next)=>{
-    res.render('home');
-    next();
+app.get ("/",(req,res)=>{
+  res.render("home");
 });
 
-app.get('/aboutme', (req, res,next)=> {
-    res.render('aboutme');
-    next();
+app.get("/aboutme", (req, res)=> {
+  res.render("aboutme");
 });
 
-app.get('/projects', (req, res,next)=> {
-    res.render('projects');
-    next();
+app.get("/projects", (req, res)=> {
+  res.render("projects");
 });
 
-app.get ('/contact',(req,res,next)=>{
-    res.render('contact');
-    next();
+app.get ("/contact",(req,res)=>{
+  res.render("contact");
 });
 
 app.use((req,res)=>{
-    res.status(404).render('404')
-})
+  res.status(404).render("404");
+});
 
 app.listen(port);
