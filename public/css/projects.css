@@ -23,3 +23,11 @@ color:var(--third-color) ;
     box-sizing: border-box;
 }
 
+.container__title{
+    padding-bottom: 1rem;
+}
+
+.moneyconverterPicture {
+    max-width: 100%;
+}
+
