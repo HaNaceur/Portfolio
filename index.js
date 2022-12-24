@@ -1,6 +1,8 @@
 const express=require("express");
 const app=express();
-const port=3000;
+const PORT = process.env.PORT || 3000;
+
+require("dotenv").config();
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
@@ -28,4 +30,6 @@ app.use((req,res)=>{
   res.status(404).render("404");
 });
 
-app.listen(port);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`)
+})
