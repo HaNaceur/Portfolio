@@ -82,7 +82,7 @@ p{
 .main_cv{
   width: 20%;
 }
-/*Right section*/
+/*language section*/
 
 .languages-section, .stack_section, .hobbies_section{
     display: flex;
@@ -206,6 +206,7 @@ max-width: 10%;
   overflow: hidden;
 	position: relative;
 	width: auto;
+  z-index:-1;
    
     
 }
