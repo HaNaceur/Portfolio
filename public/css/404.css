@@ -6,7 +6,7 @@ align-items: center;
 }
 
 .error{
-    color:lightgoldenrodyellow;
+    color:var(--second-color);
     font-size: 5rem;
 
 }
