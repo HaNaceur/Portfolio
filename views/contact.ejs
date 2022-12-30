@@ -31,16 +31,16 @@
           </div>
           <div class="screen-body-item">
             <form class="app-form" method="post" action="sendemail.php">
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="NAME" value="Will Smith">
+              <div class="app-form-group" id="name">
+                <input class="app-form-control " placeholder="NAME" value="Will Smith">
               </div>
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="EMAIL">
+              <div class="app-form-group " id="email">
+                <input class="app-form-control " placeholder="EMAIL">
               </div>
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="CONTACT">
+              <div class="app-form-group" id ="subject">
+                <input class="app-form-control " placeholder="SUBJECT">
               </div>
-              <div class="app-form-group message">
+              <div class="app-form-group message" id="message">
                 <input class="app-form-control" placeholder="MESSAGE">
               </div>
               <div class="app-form-group buttons">
@@ -58,5 +58,6 @@
 
 </main>
 
+<script src="../public/js/mailer.js"> </script>
 
 <%- include('./partials/footer.ejs') %>

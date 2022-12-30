@@ -5,7 +5,7 @@ const TxtRotate = function(el, toRotate, period) {
   this.el = el;
   this.loopNum = 0;
   this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
+  this.txt = "";
   this.tick();
   this.isDeleting = false;
 };
@@ -20,7 +20,7 @@ TxtRotate.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.el.innerHTML = "<span class=\"wrap\">"+this.txt+"</span>";
 
   const that = this;
   let delta = 300 - Math.random() * 100;
@@ -30,7 +30,7 @@ TxtRotate.prototype.tick = function() {
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
     this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
+  } else if (this.isDeleting && this.txt === "") {
     this.isDeleting = false;
     this.loopNum++;
     delta = 500;
@@ -42,10 +42,10 @@ TxtRotate.prototype.tick = function() {
 };
 
 window.onload = function() {
-  const elements = document.getElementsByClassName('txt-rotate');
+  const elements = document.getElementsByClassName("txt-rotate");
   for (var i=0; i<elements.length; i++) {
-    const toRotate = elements[i].getAttribute('data-rotate');
-    const period = elements[i].getAttribute('data-period');
+    const toRotate = elements[i].getAttribute("data-rotate");
+    const period = elements[i].getAttribute("data-period");
     if (toRotate) {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
@@ -63,33 +63,67 @@ window.onload = function() {
 
 function navbarDivClickOn(){
 
-    document.querySelector(".navbar__home").addEventListener("click", redirectHomePage);
-   function redirectHomePage() {
+  document.querySelector(".navbar__home").addEventListener("click", redirectHomePage);
+  function redirectHomePage() {
     window.location.replace("/");
-   };
-
-   document.querySelector(".navbar__parcours").addEventListener("click", redirectAboutmePage);
-   function redirectAboutmePage() {
-    window.location.replace("/aboutme");
-   };
-
-   document.querySelector(".navbar__projets").addEventListener("click", redirectProjectsPage);
-   function redirectProjectsPage() {
-    window.location.replace("/projects");
-   };
-
-   document.querySelector(".navbar__contacter").addEventListener("click", redirectContactPage);
-   function redirectContactPage() {
-    window.location.replace("/contact");
-   };
-
-
   }
 
-  navbarDivClickOn();
+  document.querySelector(".navbar__parcours").addEventListener("click", redirectAboutmePage);
+  function redirectAboutmePage() {
+    window.location.replace("/aboutme");
+  }
 
-  
+  document.querySelector(".navbar__projets").addEventListener("click", redirectProjectsPage);
+  function redirectProjectsPage() {
+    window.location.replace("/projects");
+  }
 
-  
+  document.querySelector(".navbar__contacter").addEventListener("click", redirectContactPage);
+  function redirectContactPage() {
+    window.location.replace("/contact");
+  }
 
 
+}
+
+navbarDivClickOn();
+
+
+// mailer
+
+const contactForm = document.querySelector(".app-form");
+
+let name = document.getElementById("name");
+let email = document.getElementById("email");
+let subject = document.getElementById("subject");
+let message = document.getElementById("message");
+
+contactForm.addEventListener("submit", (e)=>{
+  e.preventDefault();
+
+  let formData = {
+    name: name.value,
+    email: email.value ,
+    subject: subject.value,
+    message: message.value
+  };
+
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "/contact");
+  xhr.setRequestHeader("content-type","application/json");
+  xhr.onload = function (){
+    console.log(xhr.responseText);
+    if(xhr.responseText == "success"){
+      alert("Email sent");
+      name.value = " " ;
+      email.value = " ";
+      subject.value = " ";
+      message.value = " ";
+    }else{
+      alert("Something went wrong!");
+    }
+
+  };
+
+  xhr.send(JSON.stringify(formData));
+});
