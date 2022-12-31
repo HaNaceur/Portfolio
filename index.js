@@ -36,16 +36,17 @@ app.post("/contact",(req,res)=>{
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
-    secure: false,
+    secure:true,
+    port:465,
     auth: {
-      user: "h.naceur@montpellier-bs.com",
-      pass: "password",
-    },
+      user: process.env.GMAIL_USER,
+      pass: process.env.PASSWORD
+    }
   });
 
-  const mailOptions = {
+  let mailOptions = {
     from: req.body.email,
-    to:"h.naceur@montpellier-bs.com",
+    to: process.env.GMAIL_USER,
     subject: `Message from ${req.body.email}: ${req.body.subject}`,
     text: req.body.message
   };

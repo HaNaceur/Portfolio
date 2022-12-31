@@ -108,6 +108,8 @@ contactForm.addEventListener("submit", (e)=>{
     message: message.value
   };
 
+  console.log(formData);
+
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "/contact");
   xhr.setRequestHeader("content-type","application/json");
