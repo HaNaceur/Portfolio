@@ -10,24 +10,53 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2rem;
+    margin:2rem ;
 }
 
 .main__title{
 color:var(--third-color) ;
+padding-bottom: 2rem;
 }
 
 .container{
     display: flex;
     flex-direction:row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 2rem;
+   
     box-sizing: border-box;
+}
+
+.container__project{
+    width:50%;
+    padding-top:2rem;
 }
 
 .container__title{
     padding-bottom: 1rem;
+    font-size: 2rem;;
 }
 
-.moneyconverterPicture {
+.description{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.container__picture {
     max-width: 100%;
+    resize:both;
+    overflow: auto;
+    border-radius:5%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .6);
 }
 
+@media only screen and (min-width: 769px){
+    .container{ flex-basis: 50%; }
+  }
+  
+  @media only screen and (min-width: 1024px){
+    .container{ flex-basis: 25%; }
+  }
