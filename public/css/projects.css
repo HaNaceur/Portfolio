@@ -50,7 +50,11 @@ padding-bottom: 2rem;
     resize:both;
     overflow: auto;
     border-radius:5%;
+}
+
+.container__picture:hover{
     box-shadow: 0 20px 40px rgba(0, 0, 0, .6);
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 769px){
