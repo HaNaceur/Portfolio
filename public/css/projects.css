@@ -46,10 +46,14 @@ padding-bottom: 2rem;
 }
 
 .container__picture {
-    max-width: 100%;
     resize:both;
     overflow: auto;
     border-radius:5%;
+    max-width: 70%;
+    height: 70%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .container__picture:hover{
