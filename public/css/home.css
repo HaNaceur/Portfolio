@@ -53,6 +53,7 @@
 .main{
     text-align: center;
     padding-top: 10rem;
+    padding-bottom:25rem;
 }
 .main__title{
     color:var(--third-color);
@@ -84,7 +85,7 @@
 }
     
 .footer{
-    padding-top: 25rem;
+   
 }
 
 

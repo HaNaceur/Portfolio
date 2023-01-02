@@ -10,12 +10,12 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    margin:2rem ;
+   
 }
 
 .main__title{
 color:var(--third-color) ;
-padding-bottom: 2rem;
+
 }
 
 .container{
@@ -23,8 +23,7 @@ padding-bottom: 2rem;
     flex-direction:row;
     flex-wrap: wrap;
     align-content: space-between;
-    padding: 2rem;
-   
+
     box-sizing: border-box;
 }
 
@@ -35,8 +34,11 @@ padding-bottom: 2rem;
 
 .container__title{
     padding-bottom: 1rem;
-    font-size: 2rem;;
+    font-size: 2rem;
 }
+
+
+
 
 .description{
     display: flex;
@@ -61,10 +63,17 @@ padding-bottom: 2rem;
     cursor: pointer;
 }
 
+@media only screen and (min-width: 480px){
+    .container{ flex-basis: 50%; }
+
+    .container__title{ padding-top: 6rem; }
+  }
+
+
 @media only screen and (min-width: 769px){
     .container{ flex-basis: 50%; }
   }
   
-  @media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px){
     .container{ flex-basis: 25%; }
   }
