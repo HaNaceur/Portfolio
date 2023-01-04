@@ -70,11 +70,9 @@ padding-top:2rem;
         width: 100%;
     }
     .container__picture {
-        resize:both;
-        overflow: auto;
-        border-radius:10%;
-       max-width: 50%;
-        height: 50%;
+        border-radius:0%;
+       max-width: 90%;
+        height: 90%;
     }
   }
 
