@@ -57,10 +57,11 @@ padding-top:2rem;
 
 .container__picture:hover{
     box-shadow: 0 20px 40px rgba(0, 0, 0, .6);
+    background-size: 2rem;
     cursor: pointer;
 }
 
-@media only screen and  (min-width: 380px){
+@media screen and (max-width: 900px){
     .container{ 
         flex-direction: column;
          padding-bottom: 2rem; 
@@ -69,10 +70,3 @@ padding-top:2rem;
   }
 
 
-@media only screen and (min-width: 769px){
-    .container{ flex-basis: 25%; }
-  }
-  
-@media only screen and (min-width: 1024px){
-    .container{ flex-basis: 25%; }
-  }
