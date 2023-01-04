@@ -125,26 +125,22 @@
         backdrop-filter: blur(8px);
         width: 100%;
         height:100vh;
-        /*display: flex;;*/
         flex-direction: column;
         margin-left:-100%;
         transition: all 1 ease;
     }
     .navbar__home, .navbar__aboutme, .navbar__projects, .navbar__contact{
-       /*display:none;*/
-       /* padding: 0rem ;
-        margin:0;*/
         display: flex;
         justify-content:center;
         align-items:center;
     }
     .header__link{
-        /*display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;*/
         margin: 25px 0;
-        font-size: 1.2em;
+        font-size: 2rem;
+        font-weight:bolder;
+        background-color: var(--second-color);
+        background-size: 50%;
+        border-radius: 5%;
     }
 
     .mobile-menu{
