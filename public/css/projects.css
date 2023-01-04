@@ -67,8 +67,14 @@ padding-top:2rem;
          padding-bottom: 2rem; 
         }
     .container__project{
-        width: 80%;
-        padding-left: 5rem;
+        width: 100%;
+    }
+    .container__picture {
+        resize:both;
+        overflow: auto;
+        border-radius:10%;
+       max-width: 50%;
+        height: 50%;
     }
   }
 
