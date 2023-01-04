@@ -68,7 +68,7 @@
     color:var(--third-color);
     font-size: 1rem;
     font-weight: bold;
-    padding: 1rem 0 1rem 0;
+    padding: 2rem 0 2rem 0;
     font-weight: 200;
     margin: 0.4em 0;
 
@@ -95,6 +95,10 @@ p{
     z-index: -1;
 }
 
+.languages-section{
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .6);
+}
+
 .section{
     padding: 3rem;
     margin: 2rem;
@@ -106,8 +110,8 @@ p{
     padding: 1rem 0 1rem 0;
     font-style: italic;
     font-weight: bold;
-  padding: 2rem;
-
+    justify-content: center;
+    padding: 5rem 2rem 2rem 2rem;
 }
 .section__language{
     line-height: 2rem;
@@ -210,6 +214,7 @@ max-width: 10%;
 	width: auto;
   z-index:-1;   
   padding-bottom:20rem;
+  padding-top: 3rem;
 }
 
 .slider	.slide-track {

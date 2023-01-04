@@ -2,6 +2,7 @@
   --main-color:white;
     --second-color:#c5d5cb;
     --third-color:#9fa8a3;
+    font-family: 'Roboto Slab';
     
 }
 
@@ -18,7 +19,7 @@
   }
   
   body, button, input {
-    font-family: 'Montserrat', sans-serif;
+   
     font-weight: 700;
     letter-spacing: 1.4px;
   }

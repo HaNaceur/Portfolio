@@ -68,17 +68,17 @@ function navbarDivClickOn(){
     window.location.replace("/");
   }
 
-  document.querySelector(".navbar__parcours").addEventListener("click", redirectAboutmePage);
+  document.querySelector(".navbar__aboutme").addEventListener("click", redirectAboutmePage);
   function redirectAboutmePage() {
     window.location.replace("/aboutme");
   }
 
-  document.querySelector(".navbar__projets").addEventListener("click", redirectProjectsPage);
+  document.querySelector(".navbar__projects").addEventListener("click", redirectProjectsPage);
   function redirectProjectsPage() {
     window.location.replace("/projects");
   }
 
-  document.querySelector(".navbar__contacter").addEventListener("click", redirectContactPage);
+  document.querySelector(".navbar__contact").addEventListener("click", redirectContactPage);
   function redirectContactPage() {
     window.location.replace("/contact");
   }
@@ -129,3 +129,15 @@ contactForm.addEventListener("submit", (e)=>{
 
   xhr.send(JSON.stringify(formData));
 });
+
+//Menu Hamburger
+
+/*function menuHamburger (){
+  const hamburgerMenu = document.querySelector(".navbar__menu");
+  const navbarElm = document.querySelector(".header__navbar");
+  hamburgerMenu.addEventListener("click",()=>(
+    navbarElm.style.marginLeft = "100%"
+  ));
+}
+
+menuHamburger();*/
