@@ -66,7 +66,10 @@ padding-top:2rem;
         flex-direction: column;
          padding-bottom: 2rem; 
         }
-    .container__project{width: 100%;}
+    .container__project{
+        width: 80%;
+        padding-left: 5rem;
+    }
   }
 
 

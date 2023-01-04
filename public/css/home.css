@@ -127,13 +127,13 @@
         height:100vh;
         flex-direction: column;
         margin-left:-100%;
-        transition: all 1 ease;
     }
     .navbar__home, .navbar__aboutme, .navbar__projects, .navbar__contact{
         display: flex;
         justify-content:center;
         align-items:center;
     }
+
     .header__link{
         margin: 25px 0;
         font-size: 1.5rem;
