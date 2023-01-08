@@ -44,6 +44,24 @@ padding-top:2rem;
     line-height: 1.5rem;
 }
 
+.links {
+    text-decoration:underline;
+    padding-top: 1rem;
+}
+.links__github, .links__website{
+    text-decoration: none;
+    color:black;
+}
+
+.links__style{
+    list-style:circle;
+    padding-top: 0.5rem ;
+}
+
+.links__style:hover{
+    font-size: larger;
+}
+
 .container__picture {
     resize:both;
     overflow: auto;
@@ -61,6 +79,8 @@ padding-top:2rem;
     cursor: pointer;
 }
 
+
+
 @media screen and (max-width: 900px){
     .container{ 
         flex-direction: column;
@@ -71,8 +91,8 @@ padding-top:2rem;
     }
     .container__picture {
         border-radius:0%;
-       max-width: 90%;
-        height: 90%;
+       max-width: 80%;
+        height: 80%;
     }
     .main__title{
         padding-bottom: 5rem;

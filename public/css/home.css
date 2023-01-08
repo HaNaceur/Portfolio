@@ -138,12 +138,14 @@
         margin: 25px 0;
         font-size: 1.5rem;
         font-weight:bolder;
-        text-shadow: 0px 20px 40px rgba(0, 0, 0, 1);
+    }
+
+    .header__link:hover{
+    font-size: 3rem;
     }
 
     .mobile-menu{
         margin-left:0;
-
 
     }
     .socialMedia{
